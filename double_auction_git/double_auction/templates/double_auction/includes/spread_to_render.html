@@ -1,0 +1,10 @@
+<tr>
+    <th>Bestes Angebot:</th>
+    <td>{% if group.best_ask %}{{ group.best_ask.price }}{% endif %}</td>
+    <td>{% if group.best_ask %}{{ group.best_ask.quantity }}{% endif %}</td>
+</tr>
+<tr>
+    <th>Beste Nachfrage:</th>
+    <td>{% if group.best_bid %}{{ group.best_bid.price }}{% endif %}</td>
+    <td>{% if group.best_bid %}{{ group.best_bid.price }}{% endif %}</td>
+</tr>
